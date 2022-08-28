@@ -16,6 +16,7 @@
 		CEDF17C828B93C0D00E6C940 /* FooBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF17C728B93C0D00E6C940 /* FooBarTests.swift */; };
 		CEDF17D228B93C0D00E6C940 /* FooBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF17D128B93C0D00E6C940 /* FooBarUITests.swift */; };
 		CEDF17D428B93C0D00E6C940 /* FooBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF17D328B93C0D00E6C940 /* FooBarUITestsLaunchTests.swift */; };
+		CEDF17E328BB03B800E6C940 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = CEDF17E228BB03B800E6C940 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CEDF17CD28B93C0D00E6C940 /* FooBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDF17D128B93C0D00E6C940 /* FooBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooBarUITests.swift; sourceTree = "<group>"; };
 		CEDF17D328B93C0D00E6C940 /* FooBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEDF17E228BB03B800E6C940 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		CEDF17AF28B93C0900E6C940 /* FooBar */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF17E228BB03B800E6C940 /* Sounds */,
 				CEDF17B028B93C0900E6C940 /* AppDelegate.swift */,
 				CEDF17B228B93C0900E6C940 /* SceneDelegate.swift */,
 				CEDF17B428B93C0900E6C940 /* ViewController.swift */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDF17E328BB03B800E6C940 /* Sounds in Resources */,
 				CEDF17BD28B93C0C00E6C940 /* LaunchScreen.storyboard in Resources */,
 				CEDF17BA28B93C0C00E6C940 /* Assets.xcassets in Resources */,
 				CEDF17B828B93C0900E6C940 /* Main.storyboard in Resources */,
