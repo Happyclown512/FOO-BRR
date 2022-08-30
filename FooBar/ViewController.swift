@@ -7,7 +7,6 @@
 
 import UIKit
 import AVFoundation
-// hi do this work?
 
 class ViewController: UIViewController {
     var NUM = 4
