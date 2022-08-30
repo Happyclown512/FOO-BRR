@@ -18,18 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         displayLabel.text = "\(NUM)"
-        
-        
-        
-    
     }
-    
     
     @IBOutlet weak var displayLabel: UILabel!
     
     @IBAction func OnTap(_ sender: Any) {
         NUM += 1
-        
         
         if ((NUM % 3 == 0 ) && (NUM % 5 == 0)){ //foobar
             view.backgroundColor = UIColor.systemBlue
@@ -39,16 +33,13 @@ class ViewController: UIViewController {
             audioPlayer = try! AVAudioPlayer(contentsOf: sound!)
             audioPlayer.play()
             
-            
         }
         else if(NUM % 3 == 0 ){ //foo
             view.backgroundColor = UIColor.systemRed
             displayLabel.text = "FOO"
             
-            
             let sound = Bundle.main.url(forResource: "foo", withExtension: "m4a")
             audioPlayer = try! AVAudioPlayer(contentsOf: sound!)
-            
             audioPlayer.play()
         }
         else if (NUM % 5 == 0){ //bar
@@ -57,7 +48,6 @@ class ViewController: UIViewController {
             
             let sound = Bundle.main.url(forResource: "bar", withExtension: "m4a")
             audioPlayer = try! AVAudioPlayer(contentsOf: sound!)
-            
             audioPlayer.play()
         }
         else {
@@ -71,7 +61,4 @@ class ViewController: UIViewController {
         displayLabel.text = ""
         view.backgroundColor = UIColor.black
     }
-    
-
 }
-
