@@ -20,8 +20,7 @@ class ViewController: UIViewController {
         displayLabel.text = "\(NUM)"
         
         
-        //let sound = Bundle.main.path(forResource: "FOO", ofType: "mp3")
-        //audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        
     
     }
     
@@ -36,21 +35,30 @@ class ViewController: UIViewController {
             view.backgroundColor = UIColor.systemBlue
             displayLabel.text = "FOO\nBAR"
             
-            //sound
-            //let url = Bundle.main.url(forResource: "FOOBAR", withExtension: "m4a")
-            //audioPlayer = try!  AVAudioPlayer(contentsOf: url!)
-            //audioPlayer.play()
+            let sound = Bundle.main.url(forResource: "foobar", withExtension: "m4a")
+            audioPlayer = try! AVAudioPlayer(contentsOf: sound!)
+            audioPlayer.play()
+            
+            
         }
         else if(NUM % 3 == 0 ){ //foo
             view.backgroundColor = UIColor.systemRed
             displayLabel.text = "FOO"
             
             
-            //audioPlayer.play()
+            let sound = Bundle.main.url(forResource: "foo", withExtension: "m4a")
+            audioPlayer = try! AVAudioPlayer(contentsOf: sound!)
+            
+            audioPlayer.play()
         }
         else if (NUM % 5 == 0){ //bar
             view.backgroundColor = UIColor.systemGreen
             displayLabel.text = "BAR"
+            
+            let sound = Bundle.main.url(forResource: "bar", withExtension: "m4a")
+            audioPlayer = try! AVAudioPlayer(contentsOf: sound!)
+            
+            audioPlayer.play()
         }
         else {
             view.backgroundColor = UIColor.black
